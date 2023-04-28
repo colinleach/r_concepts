@@ -23,13 +23,26 @@
     ]
   },
   "exercises": {
-    "concept": []
+    "concept": [
+      {
+        "slug": "lasagna",
+        "name": "Lasagna",
+        "uuid": "c588a036-76cb-447a-b872-758197c15821",
+        "practices": ["basics"],
+        "prerequisites": [],
+        "status": "wip"
+      }
+    ]
   },
   "concepts": [
     {
       "uuid": "4df4ac9c-49a2-4892-8314-f9ca24d962ff",
       "slug": "basics",
       "name": "Basics"
-    }
-  ]
+    },
+    {
+      "uuid": "a36663b0-cfb7-4007-a7d3-1d106ed023fb",
+      "slug": "vectors",
+      "name": "Vectors"
+    }  ]
 }

@@ -29,13 +29,16 @@ mv config.json.tmp config.json
 mkdir $exercise_dir/
 mkdir $exercise_dir/.meta/
 mkdir $exercise_dir/.docs/
-touch $exercise_dir/.meta/design.md
-touch $exercise_dir/.docs/introduction.md
-touch $exercise_dir/.docs/instructions.md
-touch $exercise_dir/.docs/hints.md
+
+echo "# Design" > $exercise_dir/.meta/design.md
+cp .templates/exercise/config.json $exercise_dir/.meta/
+
+echo "# Introduction" > $exercise_dir/.docs/introduction.md
+echo "# Instructions" >  $exercise_dir/.docs/instructions.md
+echo "# Hints" >  $exercise_dir/.docs/hints.md
 
 
 # Create R files
-touch $exercise_dir/.meta/example.R
+touch $exercise_dir/.meta/exemplar.R
 touch $exercise_dir/$SLUG.R
 touch $exercise_dir/test_$SLUG.R

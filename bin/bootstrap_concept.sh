@@ -28,8 +28,8 @@ mv config.json.tmp config.json
 # Create instructions and config files
 mkdir $concept_dir/
 mkdir $concept_dir/.meta/
-cp ./config.json.tpl $concept_dir/.meta/config.json
-touch $concept_dir/introduction.md
-touch $concept_dir/about.md
-touch $concept_dir/links.json
+cp .templates/concept/config.json $concept_dir/.meta/
+echo "# Introduction" > $concept_dir/introduction.md
+echo "# About" > $concept_dir/about.md
+cp .templates/concept/links.json $concept_dir/
 

@@ -28,7 +28,33 @@
         "slug": "lasagna",
         "name": "Lasagna",
         "uuid": "c588a036-76cb-447a-b872-758197c15821",
-        "practices": ["basics"],
+        "practices": [
+          "basics"
+        ],
+        "prerequisites": [],
+        "status": "wip"
+      },
+      {
+        "slug": "annalyns-infiltration",
+        "name": "Annalyns Infiltration",
+        "uuid": "9b2d4bd3-c302-490d-9dac-3ac79c04cac3",
+        "practices": [],
+        "prerequisites": [],
+        "status": "wip"
+      },
+      {
+        "slug": "log-levels",
+        "name": "Log Levels",
+        "uuid": "6c85ef11-cd2d-4718-9f75-84c467afb2f9",
+        "practices": [],
+        "prerequisites": [],
+        "status": "wip"
+      },
+      {
+        "slug": "bird-watcher",
+        "name": "Bird Watcher",
+        "uuid": "ceac4ca0-3bfe-4ca7-9b83-3c9d465ef67f",
+        "practices": [],
         "prerequisites": [],
         "status": "wip"
       }
@@ -44,5 +70,6 @@
       "uuid": "a36663b0-cfb7-4007-a7d3-1d106ed023fb",
       "slug": "vectors",
       "name": "Vectors"
-    }  ]
+    }
+  ]
 }

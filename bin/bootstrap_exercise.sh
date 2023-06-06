@@ -21,7 +21,7 @@ echo "Adding instructions and configuration files..."
 NAME=$(echo $SLUG | sed -e 's/-/ /g' -e 's/\b\(.\)/\u\1/g' )
 UUID=$(bin/configlet uuid)
 jq --arg slug "$SLUG" --arg name "$NAME" --arg uuid "$UUID" \
-    '.exercises.concept += [{slug: $slug, name: $name, uuid: $uuid, practices: [], prerequisites: [] }]' \
+    '.exercises.concept += [{slug: $slug, name: $name, uuid: $uuid, practices: [], prerequisites: [], status: "wip" }]' \
     config.json > config.json.tmp
 mv config.json.tmp config.json
 

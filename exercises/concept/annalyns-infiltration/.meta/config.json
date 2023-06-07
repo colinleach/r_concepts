@@ -2,8 +2,8 @@
   "authors": ["colinleach"],
   "contributors": [],
   "files": {
-    "solution": ["slug.R"],
-    "test": ["test_slug.R"],
+    "solution": ["annalyns-infiltration.R"],
+    "test": ["test_annalyns-infiltration.R"],
     "exemplar": [".meta/exemplar.R"]
   },
   "forked_from": [""],

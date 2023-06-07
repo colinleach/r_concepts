@@ -1,6 +1,6 @@
 {
   "authors": ["jonmcalder"],
-  "contributors": [],
+  "contributors": ["colinleach"],
   "files": {
     "solution": ["lasagna.R"],
     "test": ["test_lasagna.R"],

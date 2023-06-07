@@ -2,8 +2,8 @@
   "authors": ["colinleach"],
   "contributors": [],
   "files": {
-    "solution": ["slug.R"],
-    "test": ["test_slug.R"],
+    "solution": ["{slug}.R"],
+    "test": ["test_{slug}.R"],
     "exemplar": [".meta/exemplar.R"]
   },
   "forked_from": [""],

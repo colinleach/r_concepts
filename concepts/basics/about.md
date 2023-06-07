@@ -2,7 +2,7 @@
 
 ## Variables and assignment
 
-R is a dynamically typed language, so in general it is not necessary to specify the type of a variable. The default type is `numeric`, usually implemented as a double-precision float. To force use of long-storage integers use a `L` suffix:
+R is a dynamically typed language, so in general it is not necessary to specify the class of a variable. The default class is `numeric`, usually implemented as a double-precision float. To force use of long-storage integers use a `L` suffix:
 
 ```R
 > class(50)
@@ -11,7 +11,7 @@ R is a dynamically typed language, so in general it is not necessary to specify 
 [1] "integer"
 ```
 
-Finer control of data types is possible but only becomes important when large datasets need to be handled efficiently.
+Finer control of data types is possible and can be important when large datasets need to be handled efficiently.
 
 The preferred assignment operator is `<-` 
 
@@ -45,6 +45,8 @@ squareit <- function(x) {
     x * x
 }
 ```
+
+Parentheses are needed with `function()` even if there are no parameters. The braces `{ }` are not strictly required here, but including them is considered good style.
 
 R will automatically return the final value of a function. More generally, `return(x * x)` will work from anywhere in the function body.
 

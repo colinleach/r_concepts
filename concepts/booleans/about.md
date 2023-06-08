@@ -1,6 +1,8 @@
-# Introduction
+# About
 
 The boolean values in R are `TRUE` and `FALSE`.
+
+
 
 Boolean operators are single characters:
 

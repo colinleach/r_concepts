@@ -6,8 +6,8 @@
     "test": ["test_annalyns-infiltration.R"],
     "exemplar": [".meta/exemplar.R"]
   },
-  "forked_from": [""],
+  "forked_from": ["Csharp/annalyns-infiltration"],
   "source": "",
   "source_url": "",
-  "blurb": ""
+  "blurb": "Learn about booleans by contributing to a strategy game"
 }

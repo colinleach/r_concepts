@@ -12,7 +12,7 @@ test_that("Today for disappointing day", {
 
 test_that("Today for busy day", {
   birds_per_day <- c(8, 8, 9, 5, 4, 7, 10)
-  expect_equal(today(birds_per_day), 0)
+  expect_equal(today(birds_per_day), 10)
 })
 
 # 2) increment_todays_count
@@ -41,7 +41,7 @@ test_that("Has day without birds with day without birds", {
 })
 
 test_that("Has day without birds with no day without birds", {
-  birds_per_day <- c(5, 5, 4, 0, 7, 6, 7)
+  birds_per_day <- c(4, 5, 9, 10, 9, 4, 3)
   expect_equal(has_day_without_birds(birds_per_day), FALSE)
 })
 

@@ -20,9 +20,8 @@ Implement the `increment_todays_count()` function to increment today's count:
 
 ```R
 birds_per_day <- c(2, 5, 0, 7, 4, 1)
-increment_todays_count()
-today(birds_per_day)
-# => 2
+increment_todays_count(birds_per_day)
+# => c(2, 5, 0, 7, 4, 2)
 ```
 
 ## 3. Check if there was a day with no visiting birds

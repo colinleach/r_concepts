@@ -45,3 +45,7 @@ Implement the `reformat` function that reformats the log line, putting the messa
 reformat("[INFO]: Operation completed")
 # => "Operation completed (info)"
 ```
+
+## Note
+
+Please complete this exercise using ony R core functions. You may find internet references to the `stringr` package and functions with a `str_` prefix. Like most third-party packages, this is not available within Exercism.

@@ -6,8 +6,8 @@
     "test": ["test_slug.R"],
     "exemplar": [".meta/exemplar.R"]
   },
-  "forked_from": [""],
+  "forked_from": ["Csharp/bird-watcher"],
   "source": "",
   "source_url": "",
-  "blurb": ""
+  "blurb": "Learn about R vectors by keeping track of how many birds visit your garden."
 }

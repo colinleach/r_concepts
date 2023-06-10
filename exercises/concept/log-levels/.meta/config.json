@@ -6,8 +6,8 @@
     "test": ["test_slug.R"],
     "exemplar": [".meta/exemplar.R"]
   },
-  "forked_from": [""],
+  "forked_from": ["fsharp/log-levels"],
   "source": "",
   "source_url": "",
-  "blurb": ""
+  "blurb": "Learn basic string manipulation in R by processing a log file."
 }

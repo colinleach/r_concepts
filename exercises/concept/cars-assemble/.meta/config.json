@@ -6,8 +6,8 @@
     "test": ["test_{slug}.R"],
     "exemplar": [".meta/exemplar.R"]
   },
-  "forked_from": [""],
+  "forked_from": ["Csharp/cars-assemble"],
   "source": "",
   "source_url": "",
-  "blurb": ""
+  "blurb": "Learn about conditionals by analyzing the production of an assembly line."
 }

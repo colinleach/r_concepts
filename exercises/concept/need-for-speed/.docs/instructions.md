@@ -26,23 +26,24 @@ and the battery drain percentage as its two parameters and returns a `car` list:
 speed <- 5
 battery_drain <- 2
 car <- new_car(speed, battery_drain)
-# => Car{speed: 5, batteryDrain: 2, battery:100, distance: 0}
+# => car{speed: 5, battery_drain: 2, battery:100, distance: 0}
 ```
 
 ## 2. Create a race track
 
-Define another list called `track` with the field `distance`.
-Allow creating a race track by defining a function `new_track` that takes the track's distance in meters as its sole parameter:
+Define another list called `track` with the fields `name` and  `distance`.
+Allow creating a race track by defining a function `new_track` that takes the track's name and distance in meters:
 
 ```R
+name <- "Imola"
 distance <- 800
-track <- new_track(distance)
-# => Track{distance: 800}
+track <- new_track(name, distance)
+# => Track{name: "Imola", distance: 800}
 ```
 
 ## 3. Drive the car
 
-Implement the `drive` function that updates the number of meters driven based on the car's speed, and reduces the battery according to the battery drainage.
+Implement the `drive()` function that updates the number of meters driven based on the car's speed, and reduces the battery according to the battery drainage.
 If there is not enough battery to drive one more time the car will not move:
 
 ```R
@@ -53,9 +54,24 @@ car = drive(car)
 # => car{speed: 5, battery_drain: 2, battery: 98, distance: 5}
 ```
 
-## 4. Check if a remote controlled car can finish a race
+## 4. Check for a drained battery
 
-To finish a race, a car has to be able to drive the race's distance. This means not draining its battery before having crossed the finish line. Implement the `can_finish` function that takes a `car` and a `track` as its parameter and returns `TRUE` if the car can finish the race; otherwise, return `FALSE`.
+Implement the `battery_drained()` function that indicates if the battery is drained:
+
+```R
+speed = 5;
+battery_drain = 2;
+car = new_car(speed, battery_drain);
+car = drive(car);
+
+battery_drained(car);
+# => false
+```
+
+
+## 5. Check if a remote controlled car can finish a race
+
+To finish a race, a car has to be able to drive the race's distance. This means not draining its battery before having crossed the finish line. Implement the `can_finish()` function that takes a `car` and a `track` as its parameter and returns `TRUE` if the car can finish the race; otherwise, return `FALSE`.
 
 Assume that you are currently at the starting line of the race and start the engine of the car for the race. Take into account that the car's battery might not necessarily be fully charged when starting the race:
 ```R
@@ -63,14 +79,17 @@ speed <- 5
 battery_drain <- 2
 car <- new_car(speed, battery_drain)
 
+name <- "track1"
 distance <- 100
-track <- new_track(distance)
+track <- new_track(name, distance)
 
 can_finish(car, track)
 # => TRUE
 ```
 
-## TODO - somthing that illustrates the dynamic nature of lists
+## 6. Store whether the car can finish a track on a full battery
 
 ??
+
+**TODO** : some exercise to practice adding fields with names determined at run time
 

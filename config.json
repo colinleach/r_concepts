@@ -95,6 +95,22 @@
         "practices": [],
         "prerequisites": [],
         "status": "wip"
+      },
+      {
+        "slug": "elyses-analytic-enchantments",
+        "name": "Elyses Analytic Enchantments",
+        "uuid": "2d6c9880-efce-4e57-8abf-d702087b6082",
+        "practices": [],
+        "prerequisites": [],
+        "status": "wip"
+      },
+      {
+        "slug": "annalyns-random-infiltration",
+        "name": "Annalyns Random Infiltration",
+        "uuid": "1bbeb1e8-544e-474f-b1e0-a3add1a8d38a",
+        "practices": [],
+        "prerequisites": [],
+        "status": "wip"
       }
     ]
   },
@@ -145,9 +161,14 @@
       "name": "Loops"
     },
     {
-      "uuid": "57e65f7e-825a-4ac8-8180-b596e50afe9e",
-      "slug": "more-vectors",
-      "name": "More Vectors"
+      "uuid": "68d54762-d212-4e4c-b2b7-815acd13de2c",
+      "slug": "vector-functions",
+      "name": "Vector Functions"
+    },
+    {
+      "uuid": "18919f40-a3fe-45f3-b181-84ec82bfa785",
+      "slug": "vector-filtering",
+      "name": "Vector Filtering"
     }
   ]
 }

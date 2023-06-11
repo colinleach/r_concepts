@@ -13,7 +13,7 @@ To pick a card, return the card at index `position` from the given stack.
 ```R
 stack <- c(1, 2, 4, 1)
 position <- 2
-get_item(stack, position);
+get_item(stack, position)
 # => 4
 ```
 

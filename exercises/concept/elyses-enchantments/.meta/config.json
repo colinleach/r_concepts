@@ -2,12 +2,12 @@
   "authors": ["colinleach"],
   "contributors": [],
   "files": {
-    "solution": ["{slug}.R"],
-    "test": ["test_{slug}.R"],
+    "solution": ["{elyses-enchantments.R"],
+    "test": ["test_elyses-enchantments.R"],
     "exemplar": [".meta/exemplar.R"]
   },
-  "forked_from": [""],
+  "forked_from": ["javascript/elyses-enchantments"],
   "source": "",
   "source_url": "",
-  "blurb": ""
+  "blurb": "Help Elyse with her Enchantments and learn about vectors in the process."
 }

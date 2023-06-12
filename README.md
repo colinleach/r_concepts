@@ -27,4 +27,4 @@ Progress in implementing things is tracked [on Google sheets](https://docs.googl
 - concept exercises for R
 - multiple tabs on concept exercises used by other tracks implementing a learning mode
 
-There should eventually be a flow diagram showing how everything fits together (TODO).
+A flow diagram showing how everything fits together is work in progress. See [flowchart.md](https://github.com/colinleach/r_concepts/blob/main/flowchart.md) for a Mermaid version.

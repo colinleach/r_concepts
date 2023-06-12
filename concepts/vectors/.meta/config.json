@@ -1,5 +1,5 @@
 {
   "authors": ["colinleach"],
   "contributors": [],
-  "blurb": ""
+  "blurb": "R uses vectors to store multiple values of the same type, and has many ways to manipulate them."
 }

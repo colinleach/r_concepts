@@ -1,22 +1,17 @@
 # Introduction
 
-A `vector` in R is a collection of values of the same `mode`: numeric, character, etc. If given mixed inputs, R will quietly coerce them all to a common type, usually character, which can lead to unexpected results.
+A `vector` in R is a collection of values of the same `mode`: `numeric`, `character`, etc. If given mixed inputs, R will quietly coerce them all to a common type, usually character, which can lead to unexpected results.
 
 ## Creating vectors
 
 If you already have all the values, use `c()` (short for "concatenate"):
 
 ```R
-v <- c(4, 7, 10)
+x <- 10
+v <- c(4, 7, x)
 ```
 
-If the vector starts small and grows during runtime -- for example, adding values in a loop -- it can be significantly faster to pre-allocate a long vector:
-
-```R
-v <- vector(length = 100) 
-```
-
-## Ranges and sequences
+## Ranges, sequences, repeats
 
 For a range of consecutive values (increasing or decreasing) you can use `:` notation
 
@@ -35,7 +30,7 @@ seq(2, 11, by = 3) # c(2, 5, 8, 11)
 seq(2.5, 4, length.out = 5) # c(2.500, 2.875, 3.250, 3.625, 4.000) 
 ```
 
-Some ranges are pre-defined:
+A few ranges are pre-defined as built-in constants:
 
 ```R
 > letters
@@ -55,6 +50,7 @@ As in many languages, we can use the index in brackets:
 ```
 
 But beware: ***R uses 1-based indexing by default***. 
+
 This is common for scientific languages (Fortran, Matlab, Julia) but differs from the zero-based indexing of C and its many successors.
 
 Ranges can be used, as in the example above but also in the highly flexible `c()` function:
@@ -62,4 +58,29 @@ Ranges can be used, as in the example above but also in the highly flexible `c()
 ```R
 v <- c(4, 7, 10)
 w <- c(2, v[2:3], 11) # c(2, 7, 10, 11)
+```
+
+'vectors` (like most things in R) are mutable, using similar flexible syntax to write to single or multiple elements:
+
+```R
+> v <- 1:10
+> v[2] <- 42
+> v[4:6] <- c(11, 12, 13)
+> v
+ [1]  1 42  3 11 12 13  7  8  9 10
+```
+
+## Vector conditionals
+
+Apply comparisons to a vector will return an equal-length vector of booleans. 
+This can be very convenient within functions such as `all()` and `any()`:
+
+```R
+> v <- c(4, 7, 10)
+> v >= 6
+[1] FALSE  TRUE  TRUE
+> all(v > 6)
+[1] FALSE    # not all elements match this conditional
+> any(v > 6)
+[1] TRUE     # at least one element matches
 ```

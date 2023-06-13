@@ -111,6 +111,14 @@
         "practices": [],
         "prerequisites": [],
         "status": "wip"
+      },
+      {
+        "slug": "name-badges",
+        "name": "Name Badges",
+        "uuid": "31f8973a-5035-4b54-9670-e589fa59361b",
+        "practices": [],
+        "prerequisites": [],
+        "status": "wip"
       }
     ]
   },
@@ -169,6 +177,11 @@
       "uuid": "18919f40-a3fe-45f3-b181-84ec82bfa785",
       "slug": "vector-filtering",
       "name": "Vector Filtering"
+    },
+    {
+      "uuid": "f6374c07-9244-44b2-b372-3e271b0d01be",
+      "slug": "nothingness",
+      "name": "Nothingness"
     }
   ]
 }

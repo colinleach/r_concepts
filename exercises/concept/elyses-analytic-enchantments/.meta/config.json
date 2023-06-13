@@ -2,12 +2,12 @@
   "authors": ["colinleach"],
   "contributors": [],
   "files": {
-    "solution": ["{slug}.R"],
-    "test": ["test_{slug}.R"],
+    "solution": ["elyses-analytic-enchantments.R"],
+    "test": ["test_elyses-analytic-enchantments.R"],
     "exemplar": [".meta/exemplar.R"]
   },
-  "forked_from": [""],
+  "forked_from": ["javascript/elyses-analytic-enchantments"],
   "source": "",
   "source_url": "",
-  "blurb": ""
+  "blurb": "Explore vector filtering as you help Elyse continue her training as a magician"
 }

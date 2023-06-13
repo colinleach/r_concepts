@@ -2,12 +2,12 @@
   "authors": ["colinleach"],
   "contributors": [],
   "files": {
-    "solution": ["{slug}.R"],
-    "test": ["test_{slug}.R"],
+    "solution": ["name-badges.R"],
+    "test": ["test_name-badges.R"],
     "exemplar": [".meta/exemplar.R"]
   },
-  "forked_from": [""],
+  "forked_from": ["elixir/name-badge"],
   "source": "",
   "source_url": "",
-  "blurb": ""
+  "blurb": "Handle missing values in employee name badges"
 }

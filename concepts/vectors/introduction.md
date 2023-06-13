@@ -60,7 +60,7 @@ v <- c(4, 7, 10)
 w <- c(2, v[2:3], 11) # c(2, 7, 10, 11)
 ```
 
-'vectors` (like most things in R) are mutable, using similar flexible syntax to write to single or multiple elements:
+`vectors` (like most things in R) are mutable, using similar flexible syntax to write to single or multiple elements:
 
 ```R
 > v <- 1:10
@@ -70,9 +70,22 @@ w <- c(2, v[2:3], 11) # c(2, 7, 10, 11)
  [1]  1 42  3 11 12 13  7  8  9 10
 ```
 
+## Negative indices
+
+Programmers familiar with other languages might guess that `v[-1]` is a way to access the last element in a vectore.
+Wrong!
+
+Negative indices are actually a way to ***remove*** en element, returning a shorter vector:
+
+```R
+> v <- c(2, 4, 6)
+> v[-2]
+[1] 2 6  # second element gone
+```
+
 ## Vector conditionals
 
-Apply comparisons to a vector will return an equal-length vector of booleans. 
+Applying comparisons to a vector will return an equal-length vector of booleans. 
 This can be very convenient within functions such as `all()` and `any()`:
 
 ```R
@@ -80,7 +93,7 @@ This can be very convenient within functions such as `all()` and `any()`:
 > v >= 6
 [1] FALSE  TRUE  TRUE
 > all(v > 6)
-[1] FALSE    # not all elements match this conditional
+[1] FALSE    # not all elements match this condition
 > any(v > 6)
 [1] TRUE     # at least one element matches
 ```

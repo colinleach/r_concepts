@@ -59,6 +59,36 @@ A few ranges are pre-defined as built-in constants:
  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
 ```
 
+## Arithmetic
+
+Operations are automatically applied element-wise along the vector. 
+The loops, list comprehensions and recursions common in other languages are not needed and (for performance reasons) should be avoided if possible.
+
+```R
+2 + 1:3 # c(3, 4, 5)
+2 * 1:3 # c(2, 4, 6)
+12 / 1:3 # c(12  6  4)
+2 ^ (1:3) # c(2, 4, 8) : exponentiation, operator precedence order here needs ()
+```
+
+Pairs of vectors also work:
+
+```R
+> v <- 1:3
+> w <- 5:7
+
+> v + w
+[1]  6  8 10
+
+> v * w
+[1]  5 12 21
+
+> v ^ w
+[1]    1   64 2187
+```
+
+This is more powerful than it first appears, and there will be more to explore in later concepts.
+
 ## Accessing vector elements
 
 As in many languages, we can use the index in brackets:

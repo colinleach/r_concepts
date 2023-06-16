@@ -182,6 +182,21 @@
       "uuid": "f6374c07-9244-44b2-b372-3e271b0d01be",
       "slug": "nothingness",
       "name": "Nothingness"
+    },
+    {
+      "uuid": "5362cbb2-b9a7-48b4-a09b-1d68b6a1a6a4",
+      "slug": "matrices-arrays",
+      "name": "Matrices Arrays"
+    },
+    {
+      "uuid": "48e88e41-70d9-441e-8436-d61e1e4c2b0b",
+      "slug": "classes",
+      "name": "Classes"
+    },
+    {
+      "uuid": "85db3d8c-dfec-424c-9682-caa8611db8f8",
+      "slug": "set-operations",
+      "name": "Set Operations"
     }
   ]
 }

@@ -81,33 +81,23 @@ Simple: assigning to an element will overwrite if it exists or add if it is new.
 ```R
 > point$color <- "red"
 > point$trust <- TRUE
-> point
-$x
-[1] 5.3
-
-$y
-[1] 4.2
-
-$color
-[1] "red"
-
-$trust
-[1] TRUE
+> str(point) # gives more compact output than the default display
+List of 4
+ $ x    : num 5.3
+ $ y    : num 4.2
+ $ color: chr "red"
+ $ trust: logi TRUE
 ```
 
 To delete, assign `NULL` to the unwanted element.
 
 ```R
 > point$trust <- NULL
-> point
-$x
-[1] 5.3
-
-$y
-[1] 4.2
-
-$color
-[1] "red"
+> str(point)  
+List of 3
+ $ x    : num 5.3
+ $ y    : num 4.2
+ $ color: chr "red"
 ```
 
 ## Lists are "recursive vectors"
@@ -125,11 +115,11 @@ Using single brackets `[ ]` will not do this flattening, and the returned value 
 
 ```R
 > point[["color"]]
-[1] "red"
+[1] "red"  # flattened
 
 > point["color"]
 $color
-[1] "red"
+[1] "red"  # sublist
 ```
 
 Even if this is not what a novice R programmer is likely to want, be aware of it.

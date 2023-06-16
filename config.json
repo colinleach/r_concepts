@@ -159,11 +159,6 @@
       "name": "Dataframes"
     },
     {
-      "uuid": "2c1f8f46-b097-4691-a5fe-2b8e913f9100",
-      "slug": "if-then-else",
-      "name": "If Then Else"
-    },
-    {
       "uuid": "d48dec37-b0fd-4193-954a-f005c72f8eb6",
       "slug": "loops",
       "name": "Loops"
@@ -186,7 +181,7 @@
     {
       "uuid": "5362cbb2-b9a7-48b4-a09b-1d68b6a1a6a4",
       "slug": "matrices-arrays",
-      "name": "Matrices Arrays"
+      "name": "Matrices and Arrays"
     },
     {
       "uuid": "48e88e41-70d9-441e-8436-d61e1e4c2b0b",

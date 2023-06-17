@@ -36,7 +36,7 @@ if (x == 0) return("success")
 ## Using vectors in conditionals
 
 Looking ahead to the `vector-filtering` concept: the conditional clause in parentheses `()` must evaluate to a single `TRUE`/`FALSE`. 
-Including vectors in the comparison usually gives a vector of booleans, so these will need to be wrapped in an aggregating function such as `all()`, `any()`, `max()`, etc.
+Including vectors in the comparison usually gives a vector of booleans, so these will need to be wrapped in an aggregating function such as `all()` or `any()`.
 
 ## The `ifelse` function
 

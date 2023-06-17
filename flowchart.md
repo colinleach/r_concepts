@@ -15,14 +15,14 @@ vectors --lists--> lists["need-for-speed"]
 vectors --vector-filtering--> vector-filtering["elyses-analytic-enchantments"]
 vector-filtering --nothingness--> nothingness["name-badges"]
 vectors --strings--> strings["log-levels"]
-strings --exceptions---> exceptions["??"]
+strings -.exceptions.-> exceptions["??"]
 vector-filtering --vector-functions--> vector-functions["??"]
 loops --vector-functions--> vector-functions["??"]
 nothingness --functions--> functions["??"]
-functions --apply-functions--> apply-functions["??"]
-vector-functions --apply-functions--> apply-functions["??"]
+functions -.apply-functions.-> apply-functions["??"]
+vector-functions -.apply-functions.-> apply-functions["??"]
 vector-functions --matrices-arrays--> matrices-arrays["??"]
-matrices-arrays --dataframes--> dataframes["??"]
+lists --dataframes--> dataframes["??"]
 ```
 
 

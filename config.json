@@ -28,7 +28,7 @@
         "slug": "lasagna",
         "name": "Lasagna",
         "uuid": "c588a036-76cb-447a-b872-758197c15821",
-        "practices": [
+        "concepts": [
           "basics"
         ],
         "prerequisites": [],
@@ -38,7 +38,7 @@
         "slug": "annalyns-infiltration",
         "name": "Annalyns Infiltration",
         "uuid": "9b2d4bd3-c302-490d-9dac-3ac79c04cac3",
-        "practices": [
+        "concepts": [
           "booleans"
         ],
         "prerequisites": [
@@ -50,7 +50,7 @@
         "slug": "log-levels",
         "name": "Log Levels",
         "uuid": "6c85ef11-cd2d-4718-9f75-84c467afb2f9",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [],
         "status": "wip"
       },
@@ -58,7 +58,7 @@
         "slug": "bird-watcher",
         "name": "Bird Watcher",
         "uuid": "ceac4ca0-3bfe-4ca7-9b83-3c9d465ef67f",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [
           "basics"
         ],
@@ -68,7 +68,7 @@
         "slug": "vehicle-purchase",
         "name": "Vehicle Purchase",
         "uuid": "d40b31f7-6c0d-46fa-8bd6-6618464c2572",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [],
         "status": "wip"
       },
@@ -76,7 +76,7 @@
         "slug": "cars-assemble",
         "name": "Cars Assemble",
         "uuid": "4989ced7-c38a-4d0d-86ad-03d0b4792d6c",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [],
         "status": "wip"
       },
@@ -84,7 +84,7 @@
         "slug": "need-for-speed",
         "name": "Need For Speed",
         "uuid": "bdc02503-faad-484c-afa3-aaaa2509e814",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [],
         "status": "wip"
       },
@@ -92,7 +92,7 @@
         "slug": "elyses-enchantments",
         "name": "Elyses Enchantments",
         "uuid": "9c499085-2d1a-48d4-ab73-6fa1f848fc30",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [],
         "status": "wip"
       },
@@ -100,7 +100,7 @@
         "slug": "elyses-analytic-enchantments",
         "name": "Elyses Analytic Enchantments",
         "uuid": "2d6c9880-efce-4e57-8abf-d702087b6082",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [],
         "status": "wip"
       },
@@ -108,7 +108,7 @@
         "slug": "annalyns-random-infiltration",
         "name": "Annalyns Random Infiltration",
         "uuid": "1bbeb1e8-544e-474f-b1e0-a3add1a8d38a",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [],
         "status": "wip"
       },
@@ -116,7 +116,7 @@
         "slug": "name-badges",
         "name": "Name Badges",
         "uuid": "31f8973a-5035-4b54-9670-e589fa59361b",
-        "practices": [],
+        "concepts": [],
         "prerequisites": [],
         "status": "wip"
       }

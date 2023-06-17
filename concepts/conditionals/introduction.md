@@ -1,5 +1,19 @@
 # Introduction
 
+## Comparison operators
+
+R has a set of operators that is the same as many other languages:
+
+```R
+1 == 2 # FALSE
+1 != 2 # TRUE
+1 <= 2 # TRUE
+1 >= 2 # FALSE
+# etc...
+```
+
+## Branching
+
 The basic form of an if-then-else is 
 
 ```R

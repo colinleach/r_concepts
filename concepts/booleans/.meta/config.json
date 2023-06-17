@@ -1,5 +1,5 @@
 {
   "authors": ["colinleach"],
   "contributors": [],
-  "blurb": "R has boolean values TRUE and FALSE, operators & (and), | (or), ! (not)"
+  "blurb": "R has boolean values TRUE and FALSE, operators ! (not), & or && (and), | or || (or)."
 }

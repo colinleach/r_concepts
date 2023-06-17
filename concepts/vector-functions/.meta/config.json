@@ -1,5 +1,5 @@
 {
   "authors": ["colinleach"],
   "contributors": [],
-  "blurb": ""
+  "blurb": "Many R functions can operate on entire vectors without the need for explicit loops."
 }

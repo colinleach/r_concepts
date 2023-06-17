@@ -2,12 +2,10 @@
   "authors": ["colinleach"],
   "contributors": [],
   "files": {
-    "solution": ["{slug}.R"],
-    "test": ["test_{slug}.R"],
+    "solution": ["cars-assemble.R"],
+    "test": ["test_cars-assemble.R"],
     "exemplar": [".meta/exemplar.R"]
   },
   "forked_from": ["Csharp/cars-assemble"],
-  "source": "",
-  "source_url": "",
   "blurb": "Learn about conditionals by analyzing the production of an assembly line."
 }

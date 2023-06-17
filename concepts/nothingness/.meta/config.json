@@ -1,5 +1,5 @@
 {
   "authors": ["colinleach"],
   "contributors": [],
-  "blurb": ""
+  "blurb": "R uses NULL for complete absence of a value, NA for gaps in our knowledge of the data."
 }

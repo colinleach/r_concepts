@@ -7,7 +7,5 @@
     "exemplar": [".meta/exemplar.R"]
   },
   "forked_from": ["elixir/name-badge"],
-  "source": "",
-  "source_url": "",
   "blurb": "Handle missing values in employee name badges"
 }

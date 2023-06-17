@@ -34,8 +34,8 @@ if (x == 0) return("success")
 ```
 
 An alternative if-else form may be useful, providing two criteria are met:
-- only a true/false outcome
-- both options result in the same type (`mode`) of data: numeric, character, boolean, etc.
+- only a TRUE/FALSE outcome
+- both branches result in the same type (`mode`) of data: numeric, character, boolean, etc.
 
 ```R
 y = ifelse( (x > 8), "big", "small")

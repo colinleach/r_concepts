@@ -43,3 +43,18 @@ It is a small step from there to generating the boolean vector with a conditiona
 > v[v >= 2]
 [1] 2 3
 ```
+
+## Finding indices
+
+The `which()` function takes a boolean argument and returns a vector of indices that yield `TRUE`.
+
+```R
+> v
+[1] 2 7 9
+
+> v[v > 5]  # returns values
+[1]  7  9
+
+> which(v > 5) # returns indices
+[1] 2 3
+```

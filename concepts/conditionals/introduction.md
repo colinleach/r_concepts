@@ -27,7 +27,7 @@ if (x > 10) {
 ```
 
 In this case, both parentheses `()` around the boolean and braces `{}` around the statement are required. 
-A simple if statement can be shortened:
+A simple `if` statement can be shortened:
 
 ```R
 if (x == 0) return("success")
@@ -45,4 +45,3 @@ z = ifelse( (x > 100), 100, "small") # ERROR
 ```
 
 `ifelse()` takes exactly three parameters: boolean clause, value if `TRUE`, value if `FALSE`.
-

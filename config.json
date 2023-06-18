@@ -50,17 +50,23 @@
         "slug": "log-levels",
         "name": "Log Levels",
         "uuid": "6c85ef11-cd2d-4718-9f75-84c467afb2f9",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "strings"
+        ],
+        "prerequisites": [
+          "lists"
+        ],
         "status": "wip"
       },
       {
         "slug": "bird-watcher",
         "name": "Bird Watcher",
         "uuid": "ceac4ca0-3bfe-4ca7-9b83-3c9d465ef67f",
-        "concepts": [],
+        "concepts": [
+          "vector-filtering"
+        ],
         "prerequisites": [
-          "basics"
+          "vectors"
         ],
         "status": "wip"
       },
@@ -68,56 +74,84 @@
         "slug": "vehicle-purchase",
         "name": "Vehicle Purchase",
         "uuid": "d40b31f7-6c0d-46fa-8bd6-6618464c2572",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "conditionals"
+        ],
+        "prerequisites": [
+          "booleans"
+        ],
         "status": "wip"
       },
       {
         "slug": "cars-assemble",
-        "name": "Cars Assemble",
+        "name": "Cars, Assemble",
         "uuid": "4989ced7-c38a-4d0d-86ad-03d0b4792d6c",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "conditionals"
+        ],
+        "prerequisites": [
+          "booleans"
+        ],
         "status": "wip"
       },
       {
         "slug": "need-for-speed",
         "name": "Need For Speed",
         "uuid": "bdc02503-faad-484c-afa3-aaaa2509e814",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "lists"
+        ],
+        "prerequisites": [
+          "vectors"
+        ],
         "status": "wip"
       },
       {
         "slug": "elyses-enchantments",
         "name": "Elyses Enchantments",
         "uuid": "9c499085-2d1a-48d4-ab73-6fa1f848fc30",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "vectors"
+        ],
+        "prerequisites": [
+          "conditionals"
+        ],
         "status": "wip"
       },
       {
         "slug": "elyses-analytic-enchantments",
         "name": "Elyses Analytic Enchantments",
         "uuid": "2d6c9880-efce-4e57-8abf-d702087b6082",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "vector-filtering"
+        ],
+        "prerequisites": [
+          "vectors"
+        ],
         "status": "wip"
       },
       {
         "slug": "annalyns-random-infiltration",
         "name": "Annalyns Random Infiltration",
         "uuid": "1bbeb1e8-544e-474f-b1e0-a3add1a8d38a",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          ""
+        ],
+        "prerequisites": [
+          ""
+        ],
         "status": "wip"
       },
       {
         "slug": "name-badges",
         "name": "Name Badges",
         "uuid": "31f8973a-5035-4b54-9670-e589fa59361b",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "nothingness"
+        ],
+        "prerequisites": [
+          "vector-filtering"
+        ],
         "status": "wip"
       }
     ]
@@ -192,6 +226,11 @@
       "uuid": "85db3d8c-dfec-424c-9682-caa8611db8f8",
       "slug": "set-operations",
       "name": "Set Operations"
+    },
+    {
+      "uuid": "b966f36b-9359-441e-9646-d8590c74d60d",
+      "slug": "functions",
+      "name": "Functions"
     }
   ]
 }

@@ -12,17 +12,17 @@ conditionals --vectors--> vectors["elyses-enchantments"]
 conditionals --loops--> loops["??"]
 vectors --set-operations--> set-operations["??"]
 vectors --lists--> lists["need-for-speed"]
-vectors --vector-filtering--> vector-filtering["elyses-analytic-enchantments"]
+vectors --vector-filtering--> vector-filtering["elyses-analytic-enchantments<br/>bird-watcher"]
 vector-filtering --nothingness--> nothingness["name-badges"]
 vectors --strings--> strings["log-levels"]
 strings -.exceptions.-> exceptions["??"]
 vector-filtering --vector-functions--> vector-functions["??"]
-loops --vector-functions--> vector-functions["??"]
 nothingness --functions--> functions["??"]
 functions -.apply-functions.-> apply-functions["??"]
 vector-functions -.apply-functions.-> apply-functions["??"]
 vector-functions --matrices-arrays--> matrices-arrays["??"]
 lists --dataframes--> dataframes["??"]
+strings --regular-expressions--> regular-expressions["??"]
 ```
 
 
@@ -37,5 +37,5 @@ todo --> classes
 todo --> factors 
 todo --> switch
 todo --> pipes
-todo --> regular-expressions
+todo --> randomness
 ```

@@ -1,6 +1,7 @@
 # About
 
 A `vector` in R is a collection of values of the same `mode`: numeric, character, etc. 
+They are stored contiguously in memory, similar to a C array.
 
 If given mixed inputs, R will quietly coerce them all to a common type, usually character, which can lead to unexpected results.
 
@@ -13,11 +14,13 @@ x <- 10
 v <- c(4, 7, x)
 ```
 
-If the vector starts small and grows during runtime -- for example, adding values in a loop -- it can be significantly faster to pre-allocate a long vector which can be filled with real data later:
+If the vector starts small and grows a lot during runtime -- for example, adding values in a loop -- it can be significantly faster to pre-allocate a long vector which can be filled with real data later:
 
 ```R
 v <- vector(length = 100) 
 ```
+
+This minimizes the need for copying of the vector: a slow operation for long vectors.
 
 ## Ranges, sequences, repeats
 
@@ -125,6 +128,7 @@ w <- c(2, v[2:3], 11) # c(2, 7, 10, 11)
 
 Programmers familiar with other languages might guess that `v[-1]` is a way to access the last element in a vectore.
 Wrong!
+Use `tail(v)` for that.
 
 Negative indices are actually a way to ***remove*** en element:
 
@@ -165,7 +169,7 @@ For now, just note the format of output in the REPL:
 The lines start with numbers in `[ ]` to indicate the index of the first element (useful for long vectors wrapping across multiple lines).
 But why are single values preceded by `[1]`?
 
-**There are no scalar values in R! What appears to be a single number or letter is actually a vector of length 1.**
+**There are no truly scalar values in R! What appears to be a single number or letter is actually a vector of length 1.**
 
 ## A word on notation
 

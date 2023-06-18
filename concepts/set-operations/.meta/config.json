@@ -1,5 +1,5 @@
 {
   "authors": ["colinleach"],
   "contributors": [],
-  "blurb": ""
+  "blurb": "Core R provides several functions that perform set-like operations on vectors."
 }

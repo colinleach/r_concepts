@@ -231,6 +231,16 @@
       "uuid": "b966f36b-9359-441e-9646-d8590c74d60d",
       "slug": "functions",
       "name": "Functions"
+    },
+    {
+      "uuid": "9de56486-6c39-4c08-9d5a-db78a524b0b1",
+      "slug": "randomness",
+      "name": "Randomness"
+    },
+    {
+      "uuid": "9cdafde9-01ab-4414-90e7-dd09baa41b85",
+      "slug": "regular-expressions",
+      "name": "Regular Expressions"
     }
   ]
 }

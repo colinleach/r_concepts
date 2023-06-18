@@ -22,7 +22,7 @@ This is especially true when the loop body has side effects such as printing or 
 These work much as you might guess, based on many C-family languages.
 If necessary, use `break` to exit a loop completely and `continue` to exit the current iteration.
 
-These three variants are equivalent and all end with `x` as 0.4444...
+These three variants are equivalent and all end with `x = 0.4444...`
 
 ```R
 x <- 12

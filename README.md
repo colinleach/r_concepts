@@ -27,4 +27,6 @@ Progress in implementing things is tracked [on Google sheets](https://docs.googl
 - concept exercises for R
 - multiple tabs on concept exercises used by other tracks implementing a learning mode
 
+Don't over-interpret the cells with a green background, claiming a file is done! That only means there is a reasonable amount of first-draft content, not that it is done *well*. 
+
 A flow diagram showing how everything fits together is work in progress. See [flowchart.md](https://github.com/colinleach/r_concepts/blob/main/flowchart.md) for a Mermaid version.

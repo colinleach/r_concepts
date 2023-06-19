@@ -33,15 +33,10 @@ A simple `if` statement can be shortened:
 if (x == 0) return("success")
 ```
 
-An alternative if-else form may be useful, providing two criteria are met:
-- only a TRUE/FALSE outcome
-- both branches result in the same type (`mode`) of data: numeric, character, boolean, etc.
+An alternative if-else form may be useful:
 
 ```R
 y = ifelse( (x > 8), "big", "small")
-
-# Don't do this:
-z = ifelse( (x > 100), 100, "small") # ERROR
 ```
 
 `ifelse()` takes exactly three parameters: boolean clause, value if `TRUE`, value if `FALSE`.

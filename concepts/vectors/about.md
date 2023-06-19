@@ -27,7 +27,7 @@ This minimizes the need for copying of the vector: a slow operation for long vec
 For a range of consecutive values (increasing or decreasing) you can use `:` notation
 
 ```R
-v <- 1:5 # same as c(1, 2, 3, 4, 5)
+v <- 1:5 # equivalent to c(1, 2, 3, 4, 5)
 w <- 10:7 # c(10, 9, 8, 7)
 ```
 
@@ -126,7 +126,7 @@ w <- c(2, v[2:3], 11) # c(2, 7, 10, 11)
 
 ## Negative indices
 
-Programmers familiar with other languages might guess that `v[-1]` is a way to access the last element in a vectore.
+Programmers familiar with other languages might guess that `v[-1]` is a way to access the last element in a vector.
 Wrong!
 Use `tail(v)` for that.
 

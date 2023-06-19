@@ -1,7 +1,7 @@
 # About
 
 Many languages have a way such as `null` or `none` to indicate a non-existent value.
-Because R is designed to handle large volumes of (often messy) data, it has three different forms of nothingness.
+Because R is designed to handle large volumes of (often messy) data, it has multiple forms of nothingness.
 
 The overall aim is to flag missing or suspect values as they are encountered, then continue without raising an exception.
 

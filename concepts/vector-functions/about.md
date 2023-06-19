@@ -53,3 +53,8 @@ For example, consider the pairwise-max function `pmax()`:
 ```
 
 This function and others like it also accept an arbitrary number of input vectors, not just two.
+
+## TODO
+
+- cumsum, cumprod
+- what else?

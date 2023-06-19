@@ -1,6 +1,6 @@
 # About
 
-A `list` in R is an ordered collection of items, differing vrom `vectors` in a few ways:
+A `list` in R is an ordered collection of items, differing from `vectors` in a few ways:
 - The items can be of different modes (e.g. mixing `numeric` with `character`).
 - The items can be complex structures (e.g. vectors, other lists, etc).
 - There is some different syntax for accessing elements.
@@ -102,14 +102,16 @@ List of 3
 
 ## Lists are "recursive vectors"
 
-The `vector` class is technically known as `atomic vector`, because it can only hold atomic values: `numeric`, `character`, `boolean`, etc. Because a `list` can contain other lists, it is also known as a `recursive vector`.
+The `vector` class is technically known as `atomic vector`, because it can only hold atomic values: `numeric`, `character`, `boolean`, etc. 
+Because a `list` can contain other lists, it is also known as a `recursive vector`.
 
-As well as being a technical point of nomenclature, this is a reminder that lists can have arbitraily complex structure.
+As well as being a technical point of nomenclature, this is a reminder that lists can have arbitrarily complex structure.
 It is the programmer's responsibility to understand what will be provided when accessing a list element.
 
 ## More on list indexing
 
-Some examples above used double brackets `[[ ]]` to access list emements. This will try to flatten the element to its underlying mode, useful if you just want a number or a string.
+Some examples above used double brackets `[[ ]]` to access list emements. 
+This will try to flatten the element to its underlying mode, useful if you just want a number or a string.
 
 Using single brackets `[ ]` will not do this flattening, and the returned value will be a sublist.
 

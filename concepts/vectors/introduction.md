@@ -16,7 +16,7 @@ v <- c(4, 7, x)
 For a range of consecutive values (increasing or decreasing) you can use `:` notation
 
 ```R
-v <- 1:5 # same as c(1, 2, 3, 4, 5)
+v <- 1:5 # equivalent to c(1, 2, 3, 4, 5)
 w <- 10:7 # c(10, 9, 8, 7)
 ```
 

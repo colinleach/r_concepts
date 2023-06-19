@@ -1,6 +1,6 @@
 # Introduction
 
-A `list` in R is an ordered collection of items, differing vrom `vectors` in a few ways:
+A `list` in R is an ordered collection of items, differing from `vectors` in a few ways:
 - The items can be of different modes (e.g. mixing `numeric` with `character`).
 - The items can be complex structures (e.g. vectors, other lists, etc).
 - There is some different syntax for accessing elements.

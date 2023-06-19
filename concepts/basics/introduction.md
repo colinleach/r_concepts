@@ -12,13 +12,13 @@ mystr <- "Hello, World!"
 
 Operators work conventionally:
 ```R
-2 + 3 # 5
-2 - 3 # -1
-2 * 3 # 6
-2 / 3 # 0.6666667
+2 + 3   # 5
+2 - 3   # -1
+2 * 3   # 6
+2 / 3   # 0.6666667
 8 %/% 3 # 2 (integer division)
-8 %% 3 # 2 (remainder)
-2 ^ 3 # 8 (exponential)
+8 %% 3  # 2 (remainder)
+2 ^ 3   # 8 (exponential)
 ```
 
 Also, note that `#` starts a single-line comment.

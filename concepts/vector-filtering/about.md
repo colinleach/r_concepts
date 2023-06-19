@@ -1,6 +1,6 @@
 # About
 
-We saw in the `vectors` topic that a vector can be used in a conditional expression, giving a vector of booleans. This in turn can be used in functions such as `all()` and `any()`.
+We saw in the `vectors` concept that a vector can be used in a conditional expression, giving a vector of booleans. This in turn can be used in functions such as `all()` and `any()`.
 
 ```R
 > v <- c(4, 7, 10)

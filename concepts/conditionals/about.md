@@ -40,8 +40,7 @@ Including vectors in the comparison usually gives a vector of booleans, so these
 
 ## The `ifelse` function
 
-An alternative if-else form may be useful, providing two criteria are met:
-- only a true/false outcome
+An alternative if-else form may be useful, providing there is only only a true/false outcome
 - both branches result in the same type (`mode`) of data: numeric, character, boolean, etc.
 
 ```R
@@ -53,4 +52,6 @@ z = ifelse( (x > 100), 100, "small") # ERROR
 
 `ifelse()` takes exactly three parameters: boolean clause, value if `TRUE`, value if `FALSE`.
 
-Vector inputs are acceptable, and then a vector output is produced. This will be covered in the `vector-functions` concept.
+Vector inputs are acceptable, and then a vector output is produced. 
+In this case, ensure both branches result in the same type (`mode`) of data: numeric, character, boolean, etc.
+This will be covered in the `vector-functions` concept. 

@@ -88,3 +88,25 @@ test_that("works for multiple tracks if some present in the playlist", {
   expected <- c(track_2)
   expect_equal(delete_tracks(playlist, c(track_1, track_3)), expected)
 })
+
+# 5) find_common_tracks
+
+test_that("works when there is partial overlap", {
+  track_1 <- "Ancestors - Tanya Tagaq"
+  track_2 <- "Take This Hammer - Lead Belly"
+  track_3 <- "With Or Without You - U2"
+  playlist_1 <- c(track_1, track_2)
+  playlist_2 <- c(track_2, track_3)
+  expected <- c(track_2)
+  expect_equal(find_common_tracks(playlist_1, playlist_2), expected)
+})
+
+test_that("works when there nothing in common", {
+  track_1 <- "Paranoid - Black Sabbath"
+  track_2 <- "Overkill - Motörhead"
+  track_3 <- "Gurre-Lieder - Schönberg"
+  track_4 <- "Gymnopédies - Satie"
+  playlist_1 <- c(track_1, track_2)
+  playlist_2 <- c(track_3, track_4)
+  expect_equal(length(find_common_tracks(playlist_1, playlist_2)), 0)
+})

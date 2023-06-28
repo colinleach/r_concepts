@@ -11,5 +11,9 @@ add_tracks <- function(playlist, tracks) {
 }
 
 delete_tracks <- function(playlist, tracks) {
-  setdiff(playlist, intersect(playlist, tracks))
+  setdiff(playlist, tracks)
+}
+
+find_common_tracks <- function(playlist_1, playlist_2) {
+  intersect(playlist_1, playlist_2)
 }

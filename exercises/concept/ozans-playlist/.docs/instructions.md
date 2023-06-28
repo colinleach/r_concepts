@@ -2,9 +2,7 @@
 
 Ozan is putting together a playlist for an upcoming roadtrip. He doesn"t want to hear the same track more than once, but the playlist has gotten so long that he"s having trouble remembering which tracks have already been added.
 
-<!-- The API for Ozan"s music player only knows how to work with arrays, so he attempts to write some code that uses `Array.indexOf()` to check for the presence of a track before adding it to the playlist. Unfortunately, his program takes much too long to execute. He needs your help!
-
-Coming to Ozan"s aid, you are astonished to find that his playlist contains _half a million_ tracks. Perhaps you know of a different data structure that will allow you to manipulate the playlist more efficiently? -->
+The API for Ozan"s music player only knows how to work with vectors. No explicit loops or if/else logic are possible. He needs your help!
 
 ## 1. Remove duplicate tracks
 
@@ -74,3 +72,15 @@ Implement the `delete_tracks` function, which takes a playlist and one or more t
 > delete_tracks(playlist, "I Feel the Magic - Belinda Carlisle")
 [1] "After the Fall - Klaus Nomi"
 ```
+
+## 5. Compare playlists
+
+Ozan meets a new friend and wonders how similar their tastes are. 
+Implement the `find_common_tracks` function, which takes two playlists and returns a new playlist containing only tracks present in both.
+
+```R
+> playlist_1 <- c("Karma - Taylor Swift", "Tired - Adele")
+> playlist_2 <- c("Andromeda - Weyes Blood", "Karma - Taylor Swift")
+> find_common_tracks(playlist_1, playlist_2)
+[1] "Karma - Taylor Swift"
+````

@@ -170,24 +170,36 @@
         "slug": "captains-log",
         "name": "Captains Log",
         "uuid": "bf0295ab-d4da-4cfa-8597-7689c780b5c9",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "randomness"
+        ],
+        "prerequisites": [
+          "vectors"
+        ],
         "status": "wip"
       },
       {
         "slug": "parsing-log-files",
         "name": "Parsing Log Files",
         "uuid": "a1155258-fd60-421d-b12e-ea473cb0f6b6",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "regular-expressions"
+        ],
+        "prerequisites": [
+          "strings"
+        ],
         "status": "wip"
       },
       {
         "slug": "regular-chatbot",
         "name": "Regular Chatbot",
         "uuid": "2d4f0ac8-847e-4279-af37-82ab326bb73a",
-        "concepts": [],
-        "prerequisites": [],
+        "concepts": [
+          "regular-expressions"
+        ],
+        "prerequisites": [
+          "strings"
+        ],
         "status": "wip"
       }
     ]

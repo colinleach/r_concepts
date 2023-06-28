@@ -9,5 +9,5 @@ We have already seen `%in%` to test for set membership:
 12 %in% 1:10 # FALSE
 ```
 
-Relevant functions include `union()`, `intersect()`, `setdiff()`, `choose()`.
-The last of those gets k-from-n subsets, the others are fairly obvious. Details are available online.
+Relevant functions include `unique` (to remove duplicates), `union()`, `intersect()` and `setdiff()` to operate on pairs of sets.
+Details are available online.

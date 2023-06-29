@@ -2,8 +2,8 @@
   "authors": ["colinleach"],
   "contributors": [],
   "files": {
-    "solution": ["{slug}.R"],
-    "test": ["test_{slug}.R"],
+    "solution": ["captains-log.R"],
+    "test": ["test_captains-log.R"],
     "exemplar": [".meta/exemplar.R"]
   },
   "forked_from": ["elixir/captains-log"],

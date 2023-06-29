@@ -6,8 +6,6 @@
     "test": ["test_{slug}.R"],
     "exemplar": [".meta/exemplar.R"]
   },
-  "forked_from": [""],
-  "source": "",
-  "source_url": "",
-  "blurb": ""
+  "forked_from": ["elixir/captains-log"],
+  "blurb": "Help Mary with her role playing game by generating suitable random data."
 }

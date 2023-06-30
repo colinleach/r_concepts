@@ -89,4 +89,6 @@ It looks at first like scalar multiplication and (a slightly odd) scalar additio
 
 Instead, the numbers are recyled to get a vector matching the length of `v`, then the arithmetic operation is applied element-wise using `c(0.5, 0.5, 0.5)` or `c(2, 2, 2)`.
 
-Very, very useful, but make sure this is what you intend. A slight mismatch in vector lengths (e.g. 99 vs 100) can cause confusing bugs.
+Very, very useful, but make sure this is what you intend. 
+A slight mismatch in vector lengths (e.g. 99 vs 100) can cause confusing bugs.
+Some authors recommend that recycling should only be used when one of the vectors has length 1.

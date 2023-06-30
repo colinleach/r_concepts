@@ -14,7 +14,7 @@ R has a set of operators that is the same as many other languages:
 
 ## Branching
 
-The basic form of an if-then-else is 
+The basic form of an if-else is 
 
 ```R
 if (x > 10) {

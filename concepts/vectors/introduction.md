@@ -4,7 +4,7 @@ A `vector` in R is a collection of values of the same `mode`: `numeric`, `charac
 
 ## Creating vectors
 
-If you already have all the values, use `c()` (short for "concatenate"):
+If you already have all the values, use `c()` (short for "concatenate" or "combine"):
 
 ```R
 x <- 10
@@ -40,7 +40,7 @@ A few ranges are pre-defined as built-in constants:
 ## Arithmetic
 
 Operations are automatically applied element-wise along the vector. 
-The loops, list comprehensions and recursions common in other languages are not needed and (for performance reasons) should be avoided if possible.
+The loops, list comprehensions and recursions common in other languages are not needed and (for performance reasons) should usually be avoided.
 
 ```R
 2 + 1:3 # c(3, 4, 5)

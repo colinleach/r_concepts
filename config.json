@@ -131,18 +131,6 @@
         "status": "wip"
       },
       {
-        "slug": "annalyns-random-infiltration",
-        "name": "Annalyns Random Infiltration",
-        "uuid": "1bbeb1e8-544e-474f-b1e0-a3add1a8d38a",
-        "concepts": [
-          ""
-        ],
-        "prerequisites": [
-          ""
-        ],
-        "status": "wip"
-      },
-      {
         "slug": "name-badges",
         "name": "Name Badges",
         "uuid": "31f8973a-5035-4b54-9670-e589fa59361b",

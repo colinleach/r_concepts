@@ -277,6 +277,41 @@
       "uuid": "9cdafde9-01ab-4414-90e7-dd09baa41b85",
       "slug": "regular-expressions",
       "name": "Regular Expressions"
+    },
+    {
+      "uuid": "f9bc1f9b-aa22-48c3-bc1d-ad2ea75a4d36",
+      "slug": "errors",
+      "name": "Errors"
+    },
+    {
+      "uuid": "105975c2-47f6-4619-a75a-3b14df78572e",
+      "slug": "apply-functions",
+      "name": "Apply Functions"
+    },
+    {
+      "uuid": "fad1847f-71da-4256-9df4-06adf5de7b3f",
+      "slug": "pipes",
+      "name": "Pipes"
+    },
+    {
+      "uuid": "c8c02018-ec7d-410f-8dff-58b39ac21222",
+      "slug": "macros",
+      "name": "Macros"
+    },
+    {
+      "uuid": "b9454c49-32d7-4aac-a8f5-c5ff37af2a94",
+      "slug": "factors",
+      "name": "Factors"
+    },
+    {
+      "uuid": "be04c596-32c4-497f-9f56-7d939fe7890f",
+      "slug": "names-attribute",
+      "name": "Names Attribute"
+    },
+    {
+      "uuid": "e4c75b26-aacf-4598-a12b-88e0257bd3f5",
+      "slug": "switch",
+      "name": "Switch"
     }
   ]
 }

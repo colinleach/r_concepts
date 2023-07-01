@@ -24,15 +24,15 @@ vector-filtering --vector-functions--> vector-functions["??"]
 vector-filtering --nothingness--> nothingness["name-badges"]
 vectors --strings--> strings["log-levels"]
 nothingness --functions--> functions["??"]
-style functions fill:#b00
-nothingness -.errors.-> errors["??"]
+style functions fill:#900,color:#fff
+nothingness -.errors.-> errors["factory-sensors "]
 functions -.apply-functions.-> apply-functions["??"]
 vector-functions -.apply-functions.-> apply-functions["??"]
-style apply-functions fill:#b00
+style apply-functions fill:#900,color:#fff
 vector-functions --matrices-arrays--> matrices-arrays["??"]
-style matrices-arrays fill:#b00
+style matrices-arrays fill:#900,color:#fff
 lists --dataframes--> dataframes["??"]
-style dataframes fill:#b00
+style dataframes fill:#900,color:#fff
 matrices-arrays -.dataframes.-> dataframes
 ```
 

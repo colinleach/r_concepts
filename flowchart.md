@@ -15,6 +15,7 @@ basics --booleans--> booleans["annalyns-infiltration"]
 booleans --conditionals--> conditionals["vehicle-purchase<br/>cars-assemble"]
 conditionals --vectors--> vectors["elyses-enchantments"]
 conditionals -.loops.-> loops["??"]
+conditionals -.switch.-> switch["??"]
 vectors --set-operations--> set-operations["ozans-playlist"]
 strings --randomness--> randomness["captains-log"]
 vectors --lists--> lists["need-for-speed"]
@@ -25,28 +26,29 @@ vector-filtering --nothingness--> nothingness["name-badges"]
 vectors --strings--> strings["log-levels"]
 nothingness --functions--> functions["??"]
 style functions fill:#f00,color:#fff
-nothingness -.errors.-> errors["factory-sensors "]
+nothingness --errors--> errors["factory-sensors "]
 functions -.apply-functions.-> apply-functions["??"]
+vector-functions --matrices-arrays--> matrices-arrays["??"]
 vector-functions -.apply-functions.-> apply-functions["??"]
 style apply-functions fill:#f00,color:#fff
-vector-functions --matrices-arrays--> matrices-arrays["??"]
 style matrices-arrays fill:#f00,color:#fff
+lists --name-attribute--> name-attribute["??"]
+style name-attribute fill:#f00,color:#fff
 lists --dataframes--> dataframes["??"]
 style dataframes fill:#f00,color:#fff
 matrices-arrays -.dataframes.-> dataframes
+dataframes -.factors.-> factors["??"]
+style factors fill:#f00,color:#fff
 ```
 
-This isn't quite as tangled as it may appear. I guess Mermaid doesn't have great algorithms for preventing arrows crossing, and I don't know it well enough to take manual control.
+This isn't quite as tangled as it may appear.
 
 ## Some future concepts to be slotted in
 
 ```mermaid
 graph TD
     
-todo(("TODO")) --> name-attribute
-todo --> classes
-todo --> factors 
-todo --> switch
+todo(("TODO")) --> classes
 todo --> pipes
 todo --> macros
 todo --> raw-type

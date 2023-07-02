@@ -17,6 +17,22 @@ This is especially true when the loop body has side effects such as printing or 
 [1] "loop"
 ```
 
+If the numerical index is needed, use `seq_along()`.
+
+```R
+> v = LETTERS[1:3]
+> v
+[1] "A" "B" "C"
+
+> for (i in seq_along(v)) {print(sprintf("%s%i", v[i], i))}
+[1] "A1"
+[1] "B2"
+[1] "C3"
+```
+
+Using `i in 1:length(v)` is not recommended, as it will cause problems with length-zero vectors. 
+`seq_along` is designed to handle this case correctly.
+
 ## `while` and `repeat`
 
 These work much as you might guess, based on many C-family languages.

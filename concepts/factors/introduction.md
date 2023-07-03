@@ -58,3 +58,9 @@ In `[<-.factor`(`*tmp*`, 1, value = "X") :
 Levels: H T
 ```
 
+There is no explicit command to convert a factor back to a vector, but `as.character()` will achieve this if the levels are strings.
+
+```R
+> as.character(vf)
+[1] NA  "H" "T" "T" "H"
+```

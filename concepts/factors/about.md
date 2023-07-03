@@ -19,6 +19,31 @@ Levels: H T
 
 So it appears that we now have a vector plus a set of `levels`: the allowed values.
 
+Listing the levels is simple.
+
+ ```R
+ > levels(vf)
+[1] "H" "T"
+```
+
+If you know all the allowed levels in advance, it may be worth specifying them instead of relying on R to guess from the input data.
+
+```R
+> grades <- c("B", "A", "C", "F")
+> grades_factor <- factor(grades, levels = LETTERS[1:6])
+> grades_factor
+[1] B A C F
+Levels: A B C D E F
+```
+
+If the levels have a meaningful order, there is the `ordered()` function to preserve this.
+
+```R
+> ordered(c("short", "tall"), levels = c("short", "medium", "tall"))
+[1] short tall 
+Levels: short < medium < tall
+```
+
 ## Structure of factors
 
 How are these represented internally?
@@ -32,13 +57,6 @@ How are these represented internally?
  ```
 
  Quite different: the vector stores the values, the factor stores the levels plus the *positional indices* of the levels. For large datasets, this can be a substantial saving on memory.
-
- Listing the levels is simple.
-
- ```R
- > levels(vf)
-[1] "H" "T"
-```
 
 ### Modifying factors
 
@@ -61,4 +79,32 @@ In `[<-.factor`(`*tmp*`, 1, value = "X") :
 [1] <NA> H    T    T    H   
 Levels: H T
 ```
+
+There is no explicit command to convert a factor back to a vector, but `as.character()` will achieve this if the levels are strings.
+
+```R
+> as.character(vf)
+[1] NA  "H" "T" "T" "H"
+```
+
+Conversion to a list uses `split()`, giving an entry for each level and a vector of positional indices.
+
+```R
+> split(1:5, vf)
+$H
+[1] 1 2 5
+
+$T
+[1] 3 4
+```
+
+## Avoiding factors (advanced topic)
+
+This section looks ahead to concepts such as `dataframes`. 
+It will be relevant to note that several common R functions such as `read.csv()` and `data.frame()` automatically convert character vectors to factors.
+
+This is not always desired, so these functions allow a `stringsAsFactors = FALSE` argument to override the default.
+
+The Tidyverse packages invert the default, with conversion to factors never automatic.
+Deliberate conversion can be done with the `forcats` package (outside Exercism).
 

@@ -20,7 +20,7 @@ This is especially true when the loop body has side effects such as printing or 
 If the numerical index is needed, use `seq_along()`.
 
 ```R
-> v = LETTERS[1:3]
+> v <- LETTERS[1:3]
 > v
 [1] "A" "B" "C"
 

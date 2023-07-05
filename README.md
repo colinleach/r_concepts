@@ -1,6 +1,8 @@
 # R concept playground
 
-The [R track on Exercism](https://exercism.org/tracks/r) currently lacks a Learning Syllabus, designed to lead novices to the language through a sequence of key concepts. Implementing this is nobody's priority right now, but this repo is an attempt to think about how it might one day look. It should be emphasized that this is just one person doodling: there is no expectation that it will be merged into the [Exercism/R](https://github.com/exercism/r) repo any time soon.
+The [R track on Exercism](https://exercism.org/tracks/r) currently lacks a Learning Syllabus, designed to lead novices to the language through a sequence of key concepts. Implementing this has been a low priority until now, but this repo is an attempt to think about how it might one day look.
+
+The first few PRs have (early July) been submitted to the [Exercism/R](https://github.com/exercism/r) repo. There is a long way to go!
 
 One table of possible concepts is laid out in [issue #198](https://github.com/exercism/r/issues/198)
 
@@ -28,5 +30,7 @@ Progress in implementing things is tracked [on Google sheets](https://docs.googl
 - multiple tabs on concept exercises used by other tracks implementing a learning mode
 
 Don't over-interpret the cells with a green background, claiming a file is done! That only means there is a reasonable amount of first-draft content, not that it is done *well*. 
+
+Ones maked as "merged" are more credible, but still not live on the website.
 
 A flow diagram showing how everything fits together is work in progress. See [flowchart.md](https://github.com/colinleach/r_concepts/blob/main/flowchart.md) for a Mermaid version.

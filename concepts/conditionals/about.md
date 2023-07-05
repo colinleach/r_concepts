@@ -7,10 +7,13 @@ R has a set of operators that is the same as many other languages:
 ```R
 1 == 2 # FALSE
 1 != 2 # TRUE
+1 < 2 # TRUE
+1 > 2 # FALSE
 1 <= 2 # TRUE
 1 >= 2 # FALSE
-# etc...
 ```
+
+There is no infix operator for exclusive or (i.e. A OR B, but not both). The `xor()` function can be used in this case.
 
 ## Branching
 
@@ -18,11 +21,11 @@ The basic form of an if-then-else is
 
 ```R
 if (x > 10) {
-    y = "big"
+    y <- "big"
 } else if (x > 2) {
-    y = "medium"
+    y <- "medium"
 } else {
-    y = "tiny"
+    y <- "tiny"
 }
 ```
 
@@ -40,14 +43,13 @@ Including vectors in the comparison usually gives a vector of booleans, so these
 
 ## The `ifelse` function
 
-An alternative if-else form may be useful, providing there is only only a true/false outcome
-- both branches result in the same type (`mode`) of data: numeric, character, boolean, etc.
+An alternative if-else form may be useful, providing there is only only a true/false outcome.
 
 ```R
-y = ifelse( (x > 8), "big", "small")
+y = ifelse(x > 8, "big", "small")
 
 # Don't do this:
-z = ifelse( (x > 100), 100, "small") # ERROR
+z = ifelse(x > 100, 100, "small") # can lead to problems
 ```
 
 `ifelse()` takes exactly three parameters: boolean clause, value if `TRUE`, value if `FALSE`.

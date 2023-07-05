@@ -37,7 +37,7 @@ if (x == 0) return("success")
 An alternative if-else form may be useful:
 
 ```R
-y <- ifelse( (x > 8), "big", "small")
+y <- ifelse(x > 8, "big", "small")
 ```
 
 `ifelse()` takes exactly three parameters: boolean clause, value if `TRUE`, value if `FALSE`.

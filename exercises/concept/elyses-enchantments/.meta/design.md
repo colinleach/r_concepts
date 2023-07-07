@@ -16,6 +16,7 @@ The goal of this exercise is to teach the student the basics of (atomic) vectors
 
 ## Out of scope
 
+- Creation with mode-specific functions such as `logical()`.
 - Recycling (will be introduced in `vector-filtering`).
 - More advanced subsetting.
 - Most vector functions.
@@ -26,7 +27,7 @@ The Concepts this exercise unlocks are:
 
 - `vector-filtering`
 - `lists`
-- `strings` (TODO - maybe needs `lists` first?)
+- `strings`
 - `set-operations`
 
 ## Prerequisites

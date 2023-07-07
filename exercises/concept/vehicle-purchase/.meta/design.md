@@ -22,6 +22,7 @@ The Concepts this exercise unlocks are:
 
 - `vectors`
 - `loops`
+- `switch`
 
 ## Prerequisites
 

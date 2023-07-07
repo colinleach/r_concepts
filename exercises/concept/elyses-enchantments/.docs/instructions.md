@@ -12,7 +12,7 @@ To pick a card, return the card at index `position` from the given stack.
 
 ```R
 stack <- c(1, 2, 4, 1)
-position <- 2
+position <- 3
 get_item(stack, position)
 # => 4
 ```
@@ -24,7 +24,7 @@ Return the adjusted stack.
 
 ```R
 stack <- c(1, 2, 4, 1)
-position <- 2
+position <- 3
 replacement_card <- 6
 set_item(stack, position, replacement_card)
 # => c(1, 2, 6, 1)
@@ -49,7 +49,7 @@ Return the adjusted stack.
 
 ```R
 stack <- c(3, 2, 6, 4, 8)
-position <- 2
+position <- 3
 remove_item(stack, position)
 # => c(3, 2, 4, 8)
 ```

@@ -18,14 +18,12 @@ conditionals --vectors--> vectors["elyses-enchantments"]
 conditionals -.loops.-> loops["??"]
 style loops stroke:#f00
 
-conditionals -.switch.-> switch["??"]
+conditionals -.switch.-> switch["mixed-juices"]
 style switch stroke:#f00
 
 vectors --set-operations--> set-operations["ozans-playlist"]
-strings --randomness--> randomness["captains-log"]
 vectors --lists--> lists["need-for-speed"]
 vectors --vector-filtering--> vector-filtering["elyses-analytic-enchantments<br/>bird-watcher"]
-strings --regular-expressions--> regular-expressions["regular-chatbot"]
 
 vector-filtering --vector-functions--> vector-functions["??"]
 style vector-functions stroke:#f00
@@ -37,6 +35,10 @@ nothingness --functions--> functions["??"]
 style functions fill:#f00,color:#fff
 
 nothingness --errors--> errors["factory-sensors "]
+strings --nothingness--> nothingness["name-badges"]
+strings --randomness--> randomness["captains-log"]
+strings --regular-expressions--> regular-expressions["regular-chatbot"]
+
 functions -.apply-functions.-> apply-functions["??"]
 vector-functions --matrices-arrays--> matrices-arrays["??"]
 style matrices-arrays fill:#f00,color:#fff

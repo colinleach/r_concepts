@@ -138,7 +138,8 @@
           "nothingness"
         ],
         "prerequisites": [
-          "vector-filtering"
+          "vector-filtering",
+          "strings"
         ],
         "status": "wip"
       },
@@ -194,8 +195,33 @@
         "slug": "factory-sensors",
         "name": "Factory Sensors",
         "uuid": "61d4e69f-b279-4abf-b2a4-23e8093cbd4a",
+        "concepts": [
+          "errors"
+        ],
+        "prerequisites": [
+          "nothingness"
+        ],
+        "status": "wip"
+      },
+      {
+        "slug": "blackjack",
+        "name": "Blackjack",
+        "uuid": "f76b5124-6627-47a2-b39b-acec27c0a67f",
         "concepts": [],
         "prerequisites": [],
+        "status": "wip"
+      },
+      {
+        "slug": "mixed-juices",
+        "name": "Mixed Juices",
+        "uuid": "c123a64a-e43f-4ecd-85cd-949317606e8d",
+        "concepts": [
+          "loops",
+          "switch"
+        ],
+        "prerequisites": [
+          "conditionals"
+        ],
         "status": "wip"
       }
     ]

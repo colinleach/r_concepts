@@ -20,4 +20,5 @@ star <- function(type) {
 Note that options will only fall through if the value is left blank, as with `M` in the example above. 
 There is no need to include `break` statements as with some other languages.
 
-The final value can be a default, as here, or a `stop()` to throw an error if the conditions are intended to be exhaustive.
+With character types, the final value can be a default, as here, or a `stop()` to throw an error if the conditions are intended to be exhaustive.
+Switching on an integer is slightly different: for these the default is always `NULL`.

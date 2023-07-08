@@ -1,6 +1,6 @@
 # About
 
-A `vector` in R is a collection of values of the same `mode`: numeric, character, etc. 
+A `vector` in R is a collection of values of the same `mode`: commonly integer, numeric, character, logical; rarely complex or raw. 
 They are stored contiguously in memory, similar to a C array.
 
 If given mixed inputs, R will quietly coerce them all to a common type, usually character, which can lead to unexpected results.
@@ -114,7 +114,7 @@ v <- c(4, 7, 10)
 w <- c(2, v[2:3], 11) # c(2, 7, 10, 11)
 ```
 
-`vectors` (like most things in R) are mutable, using similar flexible syntax to write to single or multiple elements:
+`vectors` (like most things in R) can be treated as mutable, using similar flexible syntax to write to single or multiple elements:
 
 ```R
 > v <- 1:10
@@ -123,6 +123,8 @@ w <- c(2, v[2:3], 11) # c(2, 7, 10, 11)
 > v
  [1]  1 42  3 11 12 13  7  8  9 10
 ```
+
+In fact, this returns a modified copy of the vector.
 
 ## Negative indices
 

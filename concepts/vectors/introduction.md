@@ -88,7 +88,7 @@ v <- c(4, 7, 10)
 w <- c(2, v[2:3], 11) # c(2, 7, 10, 11)
 ```
 
-`vectors` (like most things in R) are mutable, using similar flexible syntax to write to single or multiple elements:
+`vectors` (like most things in R) can be treated as mutable, using similar flexible syntax to write to single or multiple elements:
 
 ```R
 > v <- 1:10

@@ -11,7 +11,7 @@ The goal of this exercise is to build on the `vectors` concept by teaching the s
 
 ## Out of scope
 
-- Recycling is not mentioned within this exercise, though it is explained in `vector-filtering/about.md` which unlock on completing this exercise.
+- Recycling is not mentioned within this exercise, though it is explained in `vector-filtering/about.md` which unlocks on completing this exercise.
 
 ## Concepts
 

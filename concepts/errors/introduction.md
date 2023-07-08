@@ -63,7 +63,7 @@ These are non-fatal conditions, to warn of a problem that the program could at l
 
 ```R
 w <- function() {
-strange  warning("something strange happened")
+  warning("something strange happened")
   -1
 }
 

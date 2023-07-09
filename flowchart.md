@@ -7,23 +7,36 @@ This is a very fluid plan and will doubtless continue to change frequently!
 Boxes in solid red will almost certainly need a new concept exercise created. 
 Others marked `??` with red borders can probably fork something suitable from other tracks (TODO).
 
+Boxes with green borders have the exercise + concept PRs submitted.
+Solid green means both are merged.
+
 ```mermaid
 graph TD
     
 start(("Start")) --basics--> basics["lasagna"]
+style basics fill:#0f0
+
 basics --booleans--> booleans["annalyns-infiltration"]
+style booleans fill:#0f0
+
 booleans --conditionals--> conditionals["vehicle-purchase<br/>cars-assemble"]
+style conditionals stroke:#0f0
+
 conditionals --vectors--> vectors["elyses-enchantments"]
+style vectors stroke:#0f0
 
 conditionals -.loops.-> loops["??"]
 style loops stroke:#f00
 
 conditionals -.switch.-> switch["mixed-juices"]
-style switch stroke:#f00
 
 vectors --set-operations--> set-operations["ozans-playlist"]
+style set-operations stroke:#0f0
+
 vectors --lists--> lists["need-for-speed"]
+
 vectors --vector-filtering--> vector-filtering["elyses-analytic-enchantments<br/>bird-watcher"]
+style vector-filtering stroke:#0f0
 
 vector-filtering --vector-functions--> vector-functions["??"]
 style vector-functions stroke:#f00

@@ -1,8 +1,6 @@
 source("./captains-log.R")
 library(testthat)
 
-context("captains-log")
-
 # 1) random_planet
 
 # need enough runs to be pretty sure all possible values will be chosen

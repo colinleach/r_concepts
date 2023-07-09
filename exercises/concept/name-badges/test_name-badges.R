@@ -1,8 +1,6 @@
 source("./name-badges.R")
 library(testthat)
 
-context("name-badges")
-
 # 1) print_name_badge
 
 test_that("prints the employee badge with full data", {

@@ -1,8 +1,6 @@
 source("./need-for-speed.R")
 library(testthat)
 
-context("need-for-speed")
-
 # 1) new_car
 
 test_that("Create a new car, factory-fresh", {

@@ -1,8 +1,6 @@
 source("./log-levels.R")
 library(testthat)
 
-context("log-levels")
-
 # message
 
 test_that("Error message", {

@@ -1,6 +1,6 @@
 # Introduction
 
-There are many options and these are a few common ones.
+There are many options for generating random values, and these are a few common ones.
 
 ## Discrete values with `sample`
 

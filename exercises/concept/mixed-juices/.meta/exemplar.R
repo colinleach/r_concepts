@@ -17,6 +17,8 @@ wedges_from_lime <- function(size) {
   )
 }
 
+# Implementing limes_to_cut() in a vectorized way is possible
+# but I found that all the edge cases make the code quite ugly.
 limes_to_cut <- function(needed, limes) {
   limes_cut <- 0
   while (needed > 0 && length(limes) > 0) {
@@ -27,17 +29,18 @@ limes_to_cut <- function(needed, limes) {
   limes_cut
 }
 
-# Doing this without loops is possible, but edge cases are a complication
-# limes_to_cut <- function(needed, limes) {
-#   if (needed == 0 || length(limes) == 0) {
-#     return(0)
-#   }
-#   wedges <- cumsum(unlist(lapply(limes, wedges_from_lime)))
-#   ifelse(tail(wedges, n = 1) >= needed,
-#     length(wedges[wedges < needed]) + 1,
-#     length(limes)
-#   )
-# }
+# order_times() is contrived and rather unidiomatic, but I don't have
+# a better exercise that will work within the test runner.
+#
+# Students are free to use lapply() if they know about it:
+# unlikely at this point in the syllabus.
+order_times <- function(orders) {
+  times <- vector(length = length(orders))
+  for (i in seq_along(orders)) {
+    times[i] <- time_to_mix_juice(orders[i])
+  }
+  times
+}
 
 remaining_orders <- function(time_left, orders) {
   while (time_left > 0 && length(orders) > 0) {

@@ -1,7 +1,7 @@
 # Instructions
 
 Your friend Li Mei runs a juice bar where she sells delicious mixed fruit juices.
-You are a frequent customer in her shop and realized you could make your friend"s life easier.
+You are a frequent customer in her shop and realized you could make your friend's life easier.
 You decide to use your coding skills to help Li Mei with her job.
 
 ## 1. Determine how long it takes to mix a juice
@@ -39,7 +39,18 @@ limes_to_cut(25, c("small", "small", "large", "medium", "small"))
 # => 4
 ```
 
-## 3. Finish up the shift
+## 3. List the times to mix each order in the queue
+
+Li Mei likes to keep track of how long it will take to mix the orders customers are waiting for.
+
+Implement the `order_times` function, which takes a queue of orders and returns a vector of times to mix.
+
+```R
+order_times(c("Energizer", "Tropical Island"))
+# => c(1.5, 3.0)
+```
+
+## 4. Finish up the shift
 
 Li Mei always works until 3pm.
 Then her employee Dmitry takes over.

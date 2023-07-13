@@ -81,6 +81,42 @@ test_that("works if no limes are available", {
   expect_equal(limes_to_cut(10, limes), 0)
 })
 
+# order_times
+
+test_that("correctly determines the times for current orders", {
+  orders <- c(
+    "Tropical Island",
+    "Energizer",
+    "Limetime",
+    "All or Nothing",
+    "Pure Strawberry Joy"
+  )
+  expected <- c(3.0, 1.5, 2.5, 5.0, 0.5)
+  expect_equal(order_times(orders), expected)
+})
+
+test_that("correctly determines the times for current orders", {
+  orders <- c(
+    "Pure Strawberry Joy",
+    "Pure Strawberry Joy",
+    "Vitality",
+    "Tropical Island",
+    "All or Nothing",
+    "All or Nothing",
+    "All or Nothing",
+    "Green Garden",
+    "Limetime"
+  )
+  expected <- c(0.5, 0.5, 2.5, 3.0, 5.0, 5.0, 5.0, 1.5, 2.5)
+  expect_equal(order_times(orders), expected)
+})
+
+test_that("correctly returns an empty list if there are no orders", {
+  orders <- c()
+  expect_equal(length(order_times(orders)), 0)
+})
+
+
 # remaining_orders
 
 test_that("correctly determines the remaining orders", {

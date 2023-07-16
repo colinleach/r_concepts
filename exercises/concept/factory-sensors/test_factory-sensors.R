@@ -1,8 +1,6 @@
 source("./factory-sensors.R")
 library(testthat)
 
-context("factory-sensors")
-
 # check_humidity_level
 
 test_that("should throw if the humidity percentage is 100", {

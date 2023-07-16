@@ -39,7 +39,7 @@ Using `i in 1:length(v)` is not recommended, as it will cause problems with leng
 These work much as you might guess, based on many C-family languages.
 If necessary, use `break` to exit a loop completely and `continue` to exit the current iteration.
 
-These three variants are equivalent and all end with `x = 0.4444...`
+These three variants are equivalent and all end with `x == 0.4444...`
 
 ```R
 x <- 12

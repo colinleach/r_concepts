@@ -1,5 +1,10 @@
 # Introduction
 
+This is a big concept in R.
+To help make sense of the possibilities, it can be useful to consider the dimensionality of the input and output of the various functions.
+
+## Vector-in, scalar-out
+
 We already saw functions that take in a vector and return a single, scalar-like value:
 
 ```R
@@ -10,7 +15,14 @@ We already saw functions that take in a vector and return a single, scalar-like 
 [1] 5
 ```
 
-In fact, many functions in R will operate on entire vectors, often giving vector output:
+Many statistical functions are also in this category, such as `mean()`.
+
+For logical vectors, there are `all()` and `any()`.
+
+## Vector-in, vector-out
+
+Many functions in R will operate on entire vectors, often giving vector output.
+This includes most of the mathematical functions:
 
 ```R
 > sq <- c(4, 9, 16, 25)
@@ -21,3 +33,35 @@ In fact, many functions in R will operate on entire vectors, often giving vector
 This is not just concise and convenient, avoiding the need for loops, list comprehensions or recursion.
 In R, vector functions often run much faster than these more familiar techniques.
 
+For sorting a vector, there is `sort()` to return the values and `order()` to return the indices:
+
+```R
+> v <- c("I", "am", "not", "in", "order")
+> sort(v)
+[1] "am"    "I"     "in"    "not"   "order"
+> order(v)
+[1] 2 1 4 3 5
+```
+
+There are also functions to produce cumulative vector outputs, operating on the input vector left-to-right:
+
+```R
+> cumsum(1:5)
+[1]  1  3  6 10 15  # sums
+> cumprod(1:5)
+[1]   1   2   6  24 120 # factorials, for a range like this
+```
+
+## Multiple-vectors-in, vector-out
+
+An extension of this concept can also be used to compare vectors.
+For example, consider the pairwise-max function `pmax()`:
+
+```R
+> v
+[1] 2 7 9
+> w
+[1] 3 1 5
+> pmax(v, w)
+[1] 3 7 9 # max of each pairwise comparison
+```

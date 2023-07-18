@@ -1,7 +1,7 @@
 # Introduction
 
 A `list` in R is an ordered collection of items, differing from `vectors` in a few ways:
-- The items can be of different modes (e.g. mixing `numeric` with `character`).
+- The items can be of different types (e.g. mixing `numeric` with `character`).
 - The items can be complex structures (e.g. vectors, other lists, etc).
 - There is some different syntax for accessing elements.
 
@@ -43,7 +43,7 @@ However, tags are optional and R will then just use index numbers:
 
 There are three ways to do this, each useful in different contexts.
 
-### 1. With $tag notation
+### 1. With `$tag` notation
 
 Very common if the tag names are known in advance.
 
@@ -55,7 +55,7 @@ Very common if the tag names are known in advance.
 [1] "blue"
 ```
 
-### 2. With [[tag]] notation
+### 2. With `[[tag]]` notation
 
 This has the advantage that the tag name can be chosen at runtime. Note the double brackets.
 
@@ -76,7 +76,7 @@ This works whether or not the list has tags. Again, brackets are doubled.
 
 ## Adding and deleting elements
 
-Simple: assigning to an element will overwrite if it exists or add if it is new.
+Simple: assigning to an element will modify if it exists or add if it is new.
 
 ```R
 > point$color <- "red"

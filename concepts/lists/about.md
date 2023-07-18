@@ -1,7 +1,7 @@
 # About
 
 A `list` in R is an ordered collection of items, differing from `vectors` in a few ways:
-- The items can be of different modes (e.g. mixing `numeric` with `character`).
+- The items can be of different types (e.g. mixing `numeric` with `character`).
 - The items can be complex structures (e.g. vectors, other lists, etc).
 - There is some different syntax for accessing elements.
 
@@ -43,7 +43,7 @@ However, tags are optional and R will then just use index numbers:
 
 There are three ways to do this, each useful in different contexts.
 
-### 1. With $tag notation
+### 1. With `$tag` notation
 
 Very common if the tag names are known in advance.
 
@@ -55,7 +55,7 @@ Very common if the tag names are known in advance.
 [1] "blue"
 ```
 
-### 2. With [[tag]] notation
+### 2. With `[[tag]]` notation
 
 This has the advantage that the tag name can be chosen at runtime. Note the double brackets.
 
@@ -76,7 +76,7 @@ This works whether or not the list has tags. Again, brackets are doubled.
 
 ## Adding and deleting elements
 
-Simple: assigning to an element will overwrite if it exists or add if it is new.
+Simple: assigning to an element will modify if it exists or add if it is new.
 
 ```R
 > point$color <- "red"
@@ -111,7 +111,7 @@ It is the programmer's responsibility to understand what will be provided when a
 ## More on list indexing
 
 Some examples above used double brackets `[[ ]]` to access list emements. 
-This will try to flatten the element to its underlying mode, useful if you just want a number or a string.
+This will try to flatten the element to its underlying type, useful if you just want a number or a string.
 
 Using single brackets `[ ]` will not do this flattening, and the returned value will be a sublist.
 
@@ -124,7 +124,7 @@ $color
 [1] "red"  # sublist
 ```
 
-Even if this is not what a novice R programmer is likely to want, be aware of it.
+Even if the sublist is not what a novice R programmer is likely to want, be aware of it.
 For maximum flexibility, many standard R functions return a `list`, even when it contains a single atomic value as here.
 
 To convert to a vector there are two possibilities.
@@ -142,4 +142,11 @@ color
 "red"  # 1-element vector with name
 ```
 
-Be careful with `unlist()`. Flattening the structure is useful in this case but can be destructive with more complicated list elements.
+Be careful with `unlist()`. Flattening the structure is useful in this case but can cause surprises with more complicated list elements.
+
+
+## Advanced Topic: Internal Representation
+
+A `list`, like an atomic `vector`, is stored contiguously. The difference is that numeric and boolean vectors store *values*, but the list stores *references* to objects located elsewhere in memory.
+
+Knowing this is rarely important for an R user, but in a polyglot community like Exercism it may be helpful to programmers familiar with other languages.

@@ -24,8 +24,6 @@ To create complex numbers from two real numbers, just add the suffix `i` to the 
 [1] "complex"
 ```
 
-Thus there are various `Complex` types, derived from the corresponding integer or floating-point type.
-
 To create a complex number from real variables, the above syntax will not work.
 Writing `r + imi` confuses the parser into thinking `imi` is a (non-existent) variable name.
 
@@ -33,7 +31,7 @@ Either multiply the imaginary part by `1i` or use the `complex()` function:
 
 ```r
 > r <- 2
-im <- 3
+> im <- 3
 
 > r + im * 1i
 [1] 2+3i
@@ -54,7 +52,7 @@ Be careful when switching between [STEM][STEM] programming languages.
 To access the parts of a complex number individually:
 
 ```r
- > z <- 2+3i
+> z <- 2+3i
 
 > Re(z)  # real part
 [1] 2
@@ -64,7 +62,7 @@ To access the parts of a complex number individually:
 ```
 
 Either part can be zero and mathematicians may then talk of the number being "wholly real" or "wholly imaginary".
-However, it is still a complex number in Julia.
+However, it is still a complex number in R.
 
 ```r
 > 1.2 + 0i
@@ -233,9 +231,9 @@ If you are reading this on any sort of screen, you are utterly dependent on some
 So, you are probably using technology that relies on complex number calculations thousands of times per second.
 
 
-[complex]: 
+[complex]: https://www.cfm.brown.edu/people/dobrush/am33/R/intro/complex0.html
 [atomic]: https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Vectors
 [math-complex]: https://www.nagwa.com/en/videos/143121736364/
 [engineering-complex]: https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-ac-analysis/v/ee-complex-numbers
-[operators]: 
-
+[operators]: https://stat.ethz.ch/R-manual/R-devel/library/base/html/Syntax.html
+[STEM]: https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics

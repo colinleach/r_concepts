@@ -354,6 +354,11 @@
       "uuid": "137411b7-5af8-4a78-9225-5b85353ba81e",
       "slug": "lapply-sapply",
       "name": "Lapply Sapply"
+    },
+    {
+      "uuid": "ddba86e7-f23a-4cab-9f60-ea856a002565",
+      "slug": "complex-numbers",
+      "name": "Complex Numbers"
     }
   ]
 }
